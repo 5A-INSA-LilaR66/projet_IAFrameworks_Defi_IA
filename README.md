@@ -9,7 +9,7 @@ Voici le code pour le concours Defi IA 2023 "1001 nights: prédire le prix d'une
 Vous trouverez la première version du git où nous avons travaillé durant ce semestre ici : ``https://github.com/leacamusat/Defi-IA-bedbugs``. Ce git présente les contributions de chaque personne du groupe tout au long du semestre ainsi que les différents élements de rendu que vous avez demandés. 
 
 ## Structure de nos fichiers
-
+```
 Defi-IA-bedbugs/
 │
 ├── data/                          # Jeux de données (train, test, features)
@@ -44,7 +44,7 @@ Defi-IA-bedbugs/
 │   └── set_path.py
 │
 └── README.md                     # Présentation du projet
-
+```
 
 
 ## __Commandes à suivre pour faire fonctionner Defi-IA-bedbugs__

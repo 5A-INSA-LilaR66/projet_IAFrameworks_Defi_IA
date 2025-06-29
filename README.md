@@ -1,4 +1,8 @@
-# Defi-IA-bedbugs
+# Projet: IA Frameworks Defi-IA
+
+*Septembre - Décembre 2022*
+
+INSA Toulouse – Spécialité Mathématiques Appliquées, 5ᵉ année
 
 Voici le code pour le concours Defi IA 2023 "1001 nights: prédire le prix d'une réservation d'hôtel" (https://www.kaggle.com/competitions/defi-ia-2023)
 
@@ -6,34 +10,41 @@ Vous trouverez la première version du git où nous avons travaillé durant ce s
 
 ## Structure de nos fichiers
 
-**Defi-IA-bedbugs /</br>
-&emsp; &emsp;├─data (jeux de données)</br>
-&emsp; &emsp; &emsp; &emsp;├─ all_our_requests_done.csv</br>
-&emsp; &emsp;&emsp; &emsp; ├─ features_hotels.csv</br>
-&emsp; &emsp; &emsp; &emsp;├─ pricing_requests_done.csv</br>
-&emsp; &emsp;&emsp; &emsp; ├─ soumission.csv</br>
-&emsp; &emsp;&emsp; &emsp; ├─ test_set_cleaned_addedFeatures.csv</br>
-&emsp;&emsp; &emsp;&emsp; ├─ test_set.csv</br>
-&emsp; &emsp;├─dictionnary(poids pour le target et frequency encoding)</br>
-&emsp; &emsp;&emsp; &emsp; ├─ children_policy</br>
-&emsp; &emsp;&emsp; &emsp; ├─ mobile</br>
-&emsp; &emsp;&emsp; &emsp; ├─ parking</br>
-&emsp; &emsp;&emsp; &emsp; ├─ pool</br>
-&emsp; &emsp;&emsp; &emsp; ├─ target encoding</br>
-&emsp; &emsp;├─ models (tous les poids des modèles sont enregistrés)</br>
-&emsp; &emsp;&emsp; &emsp; ├─ __init__.py</br>
-&emsp; &emsp;├─ notebook</br>
-&emsp; &emsp;&emsp; &emsp; ├─ Analysis.ipynb</br>
-&emsp; &emsp;├─ README.md</br>
-&emsp; &emsp;├─ utilities (toutes les fonctions en .py)</br>
-&emsp; &emsp;&emsp; &emsp; ├─ adversarial_validation.py</br>
-&emsp; &emsp;&emsp; &emsp; ├─ data_preprocessing.py</br>
-&emsp; &emsp;&emsp; &emsp; ├─ Dockerfile</br>
-&emsp; &emsp;&emsp; &emsp; ├─ flagged</br>
-&emsp; &emsp;&emsp; &emsp; ├─ generation_submission.py</br>
-&emsp; &emsp;&emsp; &emsp; ├─ gradio_defiIA.py</br>
-&emsp; &emsp;&emsp; &emsp; ├─ models.py</br>
-&emsp; &emsp;&emsp; &emsp; ├─ set_path.py**
+Defi-IA-bedbugs/
+│
+├── data/                          # Jeux de données (train, test, features)
+│   ├── all_our_requests_done.csv
+│   ├── features_hotels.csv
+│   ├── pricing_requests_done.csv
+│   ├── soumission.csv
+│   ├── test_set.csv
+│   └── test_set_cleaned_addedFeatures.csv
+│
+├── dictionnary/                  # Dictionnaires de poids / encodages
+│   ├── children_policy
+│   ├── mobile
+│   ├── parking
+│   ├── pool
+│   └── target encoding
+│
+├── models/                       # Modèles entraînés et poids sauvegardés
+│   └── __init__.py
+│
+├── notebook/                     # Analyses exploratoires
+│   └── Analysis.ipynb
+│
+├── utilities/                    # Scripts Python (prétraitement, entraînement, app)
+│   ├── adversarial_validation.py
+│   ├── data_preprocessing.py
+│   ├── Dockerfile
+│   ├── flagged/                  # Dossier pour fichiers intermédiaires ou logs
+│   ├── generation_submission.py
+│   ├── gradio_defiIA.py          # Interface utilisateur avec Gradio
+│   ├── models.py                 # Définition des modèles
+│   └── set_path.py
+│
+└── README.md                     # Présentation du projet
+
 
 
 ## __Commandes à suivre pour faire fonctionner Defi-IA-bedbugs__
